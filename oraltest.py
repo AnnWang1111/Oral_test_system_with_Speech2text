@@ -41,7 +41,6 @@ def transcribe_audio(audio_bytes):
     # Perform inference
     with torch.no_grad():
         logits = model(input_values).logits
-    
     # Decode the predicted IDs into text
     predicted_ids = torch.argmax(logits, dim=-1)
     transcription = processor.decode(predicted_ids[0])
