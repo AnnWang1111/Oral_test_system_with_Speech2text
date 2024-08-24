@@ -55,7 +55,7 @@ def calculate_similarity(transcript, correct_answer):
 
 # Streamlit App
 st.title("AI口語老師")
-correct_answer = "錄音內容:GOOD MORNING, MISS WANG.GOOD MORNING, STUDENTS"
+correct_answer = "HOW IS THE WEATHER. IT IS SUNNY"
 st.write(correct_answer)
 # Record audio using st_audiorec
 audio_file = st_audiorec()
